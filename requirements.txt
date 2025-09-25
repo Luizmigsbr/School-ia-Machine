@@ -1,3 +1,13 @@
-flask
-gunicorn
+Flask
+Flask-SQLAlchemy
+Flask-JWT-Extended
+Flask-CORS
+Werkzeug
+requests
+scikit-learn
+matplotlib
+seaborn
+pandas
+numpy
+joblib
 
