@@ -1,18 +1,22 @@
 # services/ai.py
 
-def get_ai_response(*args, **kwargs):
+# 1. Defina a função para obter a resposta da IA
+def get_ai_response(prompt: str, context: dict = None) -> dict:
     """
-    Função para gerar a resposta da IA.
-    Esta é uma versão 'placeholder' para corrigir o erro de importação.
+    Esta função precisa conter a lógica real para interagir com a API de IA (ex: OpenAI, Gemini).
     """
-    # Você pode colocar a lógica real da sua IA aqui (chamadas de API, etc.)
-    return {"status": "success", "message": "Resposta placeholder da IA."}
+    # Exemplo de código MÍNIMO para que o Gunicorn consiga iniciar
+    return {
+        "status": "success",
+        "response": "Esta é uma resposta de placeholder. Conecte sua API de IA aqui."
+    }
 
-def get_ai_service_status():
+# 2. Defina a função para checar o status do serviço
+def get_ai_service_status() -> str:
     """
-    Função para verificar o status do serviço de IA.
+    Verifica se o serviço de IA está acessível.
     """
-    # Você pode colocar a lógica real de verificação de status aqui
-    return "ONLINE"
+    # Exemplo MÍNIMO
+    return "ONLINE" 
 
-# Lembre-se de adicionar qualquer outra lógica ou importação de API de IA aqui!
+# Se houver outras funções ou classes que você precise, adicione-as aqui.
