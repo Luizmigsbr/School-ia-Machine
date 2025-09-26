@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 def create_app():
     """Factory function para criar a aplicação Flask."""
     app = Flask(__name__)
-    
+    from services import get_ai_response, get_ai_service_status
     # Configurações
     app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
     app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY', 'jwt-secret-string')
