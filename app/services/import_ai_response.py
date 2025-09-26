@@ -23,7 +23,7 @@ class Educational:
         Obtém resposta do serviço ai baseado no prompt
         
         Args:
-            prompt: Texto de entrada para a IA
+            prompt: Texto de entrada para a ai
             context: Contexto adicional (opcional)
         
         Returns:
