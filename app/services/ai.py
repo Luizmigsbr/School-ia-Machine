@@ -20,7 +20,7 @@ class Educational:
     
     def get_response(self, prompt: str, context: Optional[Dict] = None) -> Dict[str, Any]:
         """
-        Obtém resposta do serviço EL baseado no prompt
+        Obtém resposta do serviço ai baseado no prompt
         
         Args:
             prompt: Texto de entrada para a IA
@@ -58,7 +58,7 @@ class Educational:
 
 def get_el_response(prompt: str, context: Optional[Dict] = None) -> Dict[str, Any]:
     """
-    Função principal para obter resposta do serviço EL
+    Função principal para obter resposta do serviço ai
     
     Args:
         prompt: Texto de entrada
@@ -73,7 +73,7 @@ def get_el_response(prompt: str, context: Optional[Dict] = None) -> Dict[str, An
 
 def get_el_service_status() -> Dict[str, Any]:
     """
-    Verifica o status do serviço EL
+    Verifica o status do serviço ai
     
     Returns:
         Status do serviço
@@ -100,9 +100,9 @@ def get_el_service_status() -> Dict[str, Any]:
 # Exemplo de uso (opcional - para testes)
 if __name__ == "__main__":
     # Teste do status
-    status = get_el_service_status()
+    status = get_ai_service_status()
     print("Status do serviço:", status)
     
     # Teste de resposta
-    response = get_el_response("Olá, como você está?")
+    response = get_ai_response("Olá, como você está?")
     print("Resposta:", response)
