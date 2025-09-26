@@ -1,2 +1,1 @@
-from services.ml_algorithms import alguma_funcao
-from services.ai_integrations import get_ai_response
+from services.ai import get_ai_response, get_ai_service_status
