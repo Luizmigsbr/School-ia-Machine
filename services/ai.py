@@ -1,9 +1,15 @@
-# services/__init__.py
+# services/ai.py
 
-# IMPORTANTE: A importação deve ser relativa (usando o ponto .)
-# Se todas as funções estiverem em ai.py:
-from .ai import get_ai_response, get_ai_service_status, EducationalMLPipeline 
+def get_ai_response(data):
+    """Retorna uma resposta de IA. Implementação deve vir aqui."""
+    # Temporariamente, retorna algo para não quebrar a aplicação
+    return "Resposta de IA simulada"
 
-# Se estiverem em arquivos diferentes, você importa de cada um:
-# from .ai_utils import get_ai_response, get_ai_service_status
-# from .ml import EducationalMLPipeline
+def get_ai_service_status():
+    """Verifica o status dos serviços de IA."""
+    return True # Ou False
+
+def EducationalMLPipeline(data):
+    """Executa o pipeline de ML Educacional."""
+    # Temporariamente, retorna um objeto vazio
+    return {}
