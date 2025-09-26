@@ -1,1 +1,8 @@
-from .al import get_el_response, get_el_service_status
+# app/services/al.py
+def get_el_response():
+    # sua implementação
+    pass
+
+def get_el_service_status():
+    # sua implementação  
+    pass
