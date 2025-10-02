@@ -14,7 +14,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 # Importar módulos locais
 from database.config import DatabaseConfig, db, create_tables
 from models import User, StudySession, Question, Progress
-from services import get_ai_response, get_ai_service_status, EducationalMLPipeline
+from .services import get_ai_response, get_ai_service_status, EducationalMLPipeline
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO)
